@@ -1,4 +1,6 @@
 import Hero from "@/components/Hero";
+import LiveWorkshop from "@/components/LiveWorkshop";
+import WorkshopPopup from "@/components/WorkshopPopup";
 import Workshops from "@/components/Workshops";
 import Course from "@/components/Course";
 import StatsBar from "@/components/StatsBar";
@@ -13,6 +15,8 @@ export default function Page() {
     <main className="min-h-screen bg-navy text-cloud antialiased selection:bg-gold/30 selection:text-white">
       <Navbar />
       <Hero />
+      <LiveWorkshop />
+      <WorkshopPopup />
       <Workshops />
       <Course />
       <StatsBar />
