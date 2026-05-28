@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Star, Award, Lightbulb } from "lucide-react";
+import Image from "next/image";
 
 const milestones = [
   { value: "5", label: "metų patirties" },
@@ -27,7 +28,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotateY: 10 }}
             whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
             className="lg:col-span-5"
             style={{ perspective: "1000px" }}
@@ -45,10 +46,12 @@ export default function About() {
                 </div>
 
                 {/* Real Photo */}
-                <img
+                <Image
                   src="https://i.imgur.com/Lqn9dMK.jpg"
                   alt="Žygis"
-                  className="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-110"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  className="object-cover opacity-90 transition-transform duration-700 group-hover:scale-110"
                 />
 
                 {/* Decorative elements */}
@@ -79,7 +82,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 1, 0.5, 1] }}
             className="lg:col-span-7"
           >

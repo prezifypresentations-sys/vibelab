@@ -95,7 +95,7 @@ export default function Testimonials() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6, delay: 0.05 }}
             className="mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
           >
@@ -108,7 +108,7 @@ export default function Testimonials() {
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.5, delay: 0.15 }}
             className="mt-4 flex items-center justify-center gap-3"
           >

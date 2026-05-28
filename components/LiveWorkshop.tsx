@@ -34,7 +34,7 @@ export default function LiveWorkshop() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-20px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.7 }}
             className="flex-1 text-center lg:text-left"
           >
@@ -78,7 +78,7 @@ export default function LiveWorkshop() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-20px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
             className="w-full max-w-sm rounded-3xl border border-white/10 bg-navy/80 p-6 sm:p-8 shadow-2xl relative overflow-hidden"
           >

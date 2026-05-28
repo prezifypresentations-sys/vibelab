@@ -114,8 +114,10 @@ export default function Hero() {
           poster="/images/hero-bg.png"
           className="absolute inset-0 h-full w-full object-cover"
           style={{ opacity: 0.15 }}
+          aria-hidden="true"
         >
           <source src="/videos/hero-bg.mp4" type="video/mp4" />
+          <track kind="captions" />
         </video>
         <div className="absolute inset-0 bg-navy/70" />
       </div>
