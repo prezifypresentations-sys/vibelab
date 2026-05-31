@@ -91,13 +91,13 @@ export default function StatsBar() {
                 key={stat.label}
                 initial={{ opacity: 0, y: 30, scale: 0.95 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: true, margin: "0px 0px -50px 0px" }}
                 transition={{
                   duration: 0.7,
                   delay: i * 0.15,
                   ease: [0.25, 1, 0.5, 1],
                 }}
-                className="group flex flex-col items-center text-center rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-500 hover:bg-white/[0.05] hover:border-white/[0.12] hover:translate-y-[-4px]"
+                className="will-change-transform group flex flex-col items-center text-center rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-500 hover:bg-white/[0.05] hover:border-white/[0.12] hover:translate-y-[-4px]"
               >
                 <div
                   className={`mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${stat.gradient} shadow-lg transition-transform duration-500 group-hover:scale-110`}

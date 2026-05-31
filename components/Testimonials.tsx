@@ -95,9 +95,9 @@ export default function Testimonials() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.6, delay: 0.05 }}
-            className="mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
+            className="will-change-transform mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
           >
             Klientų{" "}
             <span className="gradient-underline bg-gradient-to-r from-gold to-electric-light bg-clip-text text-transparent">
@@ -108,9 +108,9 @@ export default function Testimonials() {
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="mt-4 flex items-center justify-center gap-3"
+            className="will-change-transform mt-4 flex items-center justify-center gap-3"
           >
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (

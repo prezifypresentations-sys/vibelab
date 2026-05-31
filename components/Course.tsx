@@ -66,9 +66,9 @@ export default function Course() {
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-            className="lg:col-span-7"
+            className="will-change-transform lg:col-span-7"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-electric/30 bg-electric/10 px-4 py-1.5 text-xs font-medium text-electric-light">
               <Clock className="h-3 w-3" />
@@ -132,9 +132,9 @@ export default function Course() {
           <motion.div
             initial={{ opacity: 0, x: 40, rotateY: -5 }}
             whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 1, 0.5, 1] }}
-            className="lg:col-span-5"
+            className="will-change-transform lg:col-span-5"
             style={{ perspective: "1000px" }}
           >
             <div className="relative rounded-2xl border border-white/[0.08] bg-gradient-to-br from-white/[0.06] to-white/[0.01] p-8 backdrop-blur-sm overflow-hidden">

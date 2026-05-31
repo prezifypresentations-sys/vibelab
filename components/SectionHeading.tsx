@@ -44,9 +44,9 @@ export default function SectionHeading({
       <motion.h2
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
+        viewport={{ once: true, margin: "0px 0px -50px 0px" }}
         transition={{ duration: 0.6, delay: 0.05 }}
-        className="mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
+        className="will-change-transform mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
       >
         {title}
       </motion.h2>
@@ -54,7 +54,7 @@ export default function SectionHeading({
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "0px 0px -50px 0px" }}
           transition={{ duration: 0.6, delay: 0.15 }}
           className={`mt-5 text-lg text-cloud/70 leading-relaxed ${
             align === "center" ? "mx-auto max-w-2xl" : ""
