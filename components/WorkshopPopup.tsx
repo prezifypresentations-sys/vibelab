@@ -70,11 +70,14 @@ export default function WorkshopPopup() {
               <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
                 <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-gold">
                   <Video className="h-3 w-3" />
-                  Gyvos Dirbtuvės
+                  Gyvos Dirbtuvės per Zoom
                 </div>
                 <div className="inline-flex items-center gap-2 rounded-full border border-electric/30 bg-electric/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-electric-light">
                   <Calendar className="h-3 w-3" />
                   2026-06-03 19:00
+                </div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-red-400">
+                  Vietų skaičius ribotas
                 </div>
               </div>
 

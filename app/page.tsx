@@ -9,6 +9,7 @@ import About from "@/components/About";
 import CTABand from "@/components/CTABand";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import StripeConfirmation from "@/components/StripeConfirmation";
 
 export default function Page() {
   return (
@@ -24,6 +25,7 @@ export default function Page() {
       <About />
       <CTABand />
       <Footer />
+      <StripeConfirmation />
     </main>
   );
 }
