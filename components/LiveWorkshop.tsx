@@ -45,7 +45,7 @@ export default function LiveWorkshop() {
               </div>
               <div className="inline-flex items-center gap-2 rounded-full border border-electric/30 bg-electric/10 px-4 py-1.5 text-xs font-medium text-electric-light shadow-[0_0_12px_rgba(11,95,255,0.15)]">
                 <Calendar className="h-3.5 w-3.5" />
-                2026-06-03 19:00
+                2026-06-17 19:00
               </div>
               <div className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-4 py-1.5 text-xs font-medium text-red-400 shadow-[0_0_12px_rgba(239,68,68,0.15)]">
                 Vietų skaičius ribotas

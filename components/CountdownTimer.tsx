@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Timer } from "lucide-react";
 
-const TARGET_DATE = new Date("2026-06-03T19:00:00+03:00").getTime(); // Ensure timezone is correctly handled or use local parsing
+const TARGET_DATE = new Date("2026-06-17T19:00:00+03:00").getTime(); // Ensure timezone is correctly handled or use local parsing
 
 export default function CountdownTimer({ className = "" }: { className?: string }) {
   const [mounted, setMounted] = useState(false);
