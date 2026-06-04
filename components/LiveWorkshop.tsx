@@ -32,10 +32,10 @@ export default function LiveWorkshop() {
         <div className="gradient-border-card bg-white/[0.02] backdrop-blur-sm p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-12">
           
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.5 }}
             className="will-change-transform flex-1 text-center lg:text-left"
           >
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-6">
@@ -79,10 +79,10 @@ export default function LiveWorkshop() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-            transition={{ duration: 0.7, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             className="will-change-transform w-full max-w-sm rounded-3xl border border-white/10 bg-navy/80 p-6 sm:p-8 shadow-2xl relative overflow-hidden"
           >
             {/* Subtle inner glow */}

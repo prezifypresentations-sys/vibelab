@@ -89,8 +89,8 @@ export default function StatsBar() {
             return (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "0px 0px -50px 0px" }}
                 transition={{
                   duration: 0.7,

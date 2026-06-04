@@ -26,10 +26,10 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left: Photo card */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9, rotateY: 10 }}
-            whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-            transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
+            transition={{ duration: 0.5 }}
             className="will-change-transform lg:col-span-5"
             style={{ perspective: "1000px" }}
           >
@@ -80,7 +80,7 @@ export default function About() {
 
           {/* Right: Content */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 1, 0.5, 1] }}
