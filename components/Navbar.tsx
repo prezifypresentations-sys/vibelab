@@ -6,9 +6,10 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#workshops", label: "Įgūdžiai" },
-  { href: "#course", label: "Kursas" },
+  { href: "#nauda", label: "Galimybės" },
   { href: "#about", label: "Apie" },
+  { href: "#duk", label: "DUK" },
+  { href: "#kaina", label: "Gidas" },
 ];
 
 export default function Navbar() {
@@ -46,10 +47,10 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3">
             <a
-              href="#hero"
+              href="#kaina"
               className="hidden md:inline-flex items-center rounded-full bg-gold px-5 py-2 text-sm font-semibold text-navy hover:bg-gold-light transition-all hover:shadow-[0_0_20px_rgba(255,222,89,0.3)]"
             >
-              Stoti į eilę
+              Gauti Asistentą
             </a>
 
             <button
@@ -91,14 +92,14 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <motion.a
-                href="#hero"
+                href="#kaina"
                 onClick={() => setMobileOpen(false)}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.2 }}
                 className="mt-4 inline-flex items-center rounded-full bg-gold px-8 py-3 text-base font-semibold text-navy"
               >
-                Stoti į eilę
+                Peržiūrėti kursus
               </motion.a>
             </nav>
           </motion.div>

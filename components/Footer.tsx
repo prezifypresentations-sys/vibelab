@@ -4,17 +4,17 @@ import { Linkedin, Youtube, Instagram } from "lucide-react";
 
 const links = {
   Produktai: [
-    { label: "Ką išmoksite", href: "#workshops" },
-    { label: "Kursas AI Verslui 2026", href: "#course" },
+    { label: "Ką išmoksite", href: "/#nauda" },
+    { label: "AI Asistento Gidas", href: "/#kaina" },
   ],
   Apie: [
-    { label: "Kūrėjas", href: "#about" },
-    { label: "Tinklaraštis", href: "#blog" },
-    { label: "Kontaktai", href: "#contact" },
+    { label: "Kūrėjas", href: "/#apie" },
+    { label: "Tinklaraštis", href: "/blog" },
+    { label: "Kontaktai", href: "mailto:zygis@vibelab.lt" },
   ],
   Teisinė: [
-    { label: "Privatumo politika", href: "#privacy" },
-    { label: "Naudojimo sąlygos", href: "#terms" },
+    { label: "Privatumo politika", href: "/privatumo-politika" },
+    { label: "Naudojimo sąlygos", href: "/naudojimo-salygos" },
   ],
 };
 
@@ -29,8 +29,8 @@ export default function Footer() {
               <span className="text-white"> Lab</span>
             </div>
             <p className="mt-4 max-w-sm text-cloud/65 leading-relaxed">
-              Praktinis Claude Code kursas Lietuvos verslui —
-              nuo svetainių kūrimo iki AI automatizacijų.
+              Praktiniai AI sprendimai Lietuvos verslui —
+              nuo asistentų kūrimo be kodo iki pilnų automatizacijų.
             </p>
           </div>
 

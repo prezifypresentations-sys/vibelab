@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Zap } from "lucide-react";
 
 export default function CTABand() {
   return (
@@ -37,15 +37,15 @@ export default function CTABand() {
             className="relative"
           >
             <div className="inline-flex items-center gap-2 rounded-full bg-navy/15 px-4 py-1.5 text-xs font-medium text-navy/80 mb-6 border border-navy/20">
-              <Mail className="h-3.5 w-3.5" />
-              Claude Code kursas · Waiting list
+              <Zap className="h-3.5 w-3.5" />
+              Nepraleisk progos
             </div>
 
             <h2 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-navy leading-[1.05] tracking-tight">
-              Stok į
+              Pradėk savo
               <br />
               <span className="relative inline-block">
-                laukiančiųjų
+                transformaciją
                 {/* Scribble circle decoration */}
                 <svg
                   className="absolute -inset-[18%] w-[136%] h-[136%] pointer-events-none"
@@ -66,20 +66,19 @@ export default function CTABand() {
                 </svg>
               </span>
               <br />
-              sąrašą
+              jau šiandien
             </h2>
 
             <p className="mt-6 mx-auto max-w-xl text-lg text-navy/60">
-              Būkite pirmi, kai startuos Claude Code kursas. Registruokitės ir
-              gaukite nemokamą 10 promptų gidą iškart.
+              Prisijunkite prie platformos ir gaukite savo AI asistentą jau šiandien. Prieiga prie gido ir visų resursų suteikiama iš karto po apmokėjimo.
             </p>
 
             <div className="mt-10">
               <a
-                href="#hero"
+                href="/pirkti"
                 className="group inline-flex items-center gap-3 rounded-2xl bg-navy px-8 py-5 text-base font-bold text-gold transition-all hover:bg-navy/90 hover:shadow-[0_0_40px_rgba(10,22,40,0.4)]"
               >
-                REGISTRUOTIS
+                PIRKTI DABAR
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </a>
             </div>

@@ -72,7 +72,7 @@ export default function Course() {
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-electric/30 bg-electric/10 px-4 py-1.5 text-xs font-medium text-electric-light">
               <Clock className="h-3 w-3" />
-              Waitlist · Pradžia 2026
+              Prieiga iškart po apmokėjimo
             </span>
 
             <h2 className="mt-6 font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.05]">
@@ -112,10 +112,10 @@ export default function Course() {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="#hero"
+                href="#kursai"
                 className="group inline-flex items-center gap-2 rounded-xl bg-gold px-7 py-4 text-sm font-semibold text-navy transition-all hover:bg-gold-light hover:shadow-[0_0_30px_rgba(255,222,89,0.3)]"
               >
-                Stoti į eilę
+                Pirkti dabar
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <button
@@ -261,14 +261,14 @@ export default function Course() {
               {/* Modal Footer */}
               <div className="border-t border-white/5 bg-white/[0.02] px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p className="text-sm text-cloud/50 text-center sm:text-left">
-                  Norite sužinoti daugiau? Užsiregistruokite į laukiančiųjų sąrašą.
+                  Esate pasiruošę pradėti? Pasirinkite jums tinkamiausią planą.
                 </p>
                 <a
-                  href="#hero"
+                  href="#kursai"
                   onClick={() => setIsModalOpen(false)}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-6 py-3 text-sm font-bold text-navy transition-all hover:bg-gold-light"
                 >
-                  Stoti į eilę
+                  Pirkti dabar
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </div>

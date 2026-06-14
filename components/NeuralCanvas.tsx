@@ -368,7 +368,29 @@ export default function NeuralCanvas() {
     window.addEventListener("touchmove", handleTouch);
     window.addEventListener("mouseleave", handleLeave);
 
+    let isVisible = true;
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        isVisible = entries[0].isIntersecting;
+        if (isVisible) {
+          // Resume animation if it was paused
+          if (!animRef.current) {
+            animRef.current = requestAnimationFrame(loop);
+          }
+        }
+      },
+      { threshold: 0 }
+    );
+    
+    if (canvas) observer.observe(canvas);
+
     const loop = (time: number) => {
+      if (!isVisible) {
+        // Stop requesting frames when not visible
+        animRef.current = 0;
+        return;
+      }
       const w = window.innerWidth;
       const h = window.innerHeight;
       draw(ctx, w, h, time);
@@ -377,7 +399,8 @@ export default function NeuralCanvas() {
     animRef.current = requestAnimationFrame(loop);
 
     return () => {
-      cancelAnimationFrame(animRef.current);
+      if (animRef.current) cancelAnimationFrame(animRef.current);
+      if (canvas) observer.unobserve(canvas);
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", handleMouse);
       window.removeEventListener("touchmove", handleTouch);

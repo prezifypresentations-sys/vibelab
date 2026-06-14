@@ -59,10 +59,10 @@ const cardVariants = {
   }),
 };
 
-export default function WhatYouLearn() {
+export default function Skills() {
   return (
     <section
-      id="workshops"
+      id="skills"
       className="relative py-28 md:py-40 overflow-hidden"
     >
       {/* Background decorations */}

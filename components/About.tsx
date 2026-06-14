@@ -88,45 +88,26 @@ export default function About() {
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-medium text-gold">
               <Award className="h-3 w-3" />
-              Apie kūrėją
+              Kodėl sukūriau šį gidą?
             </span>
 
-            <h2 className="mt-6 font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.05]">
-              Nuo Excel mentoriaus —{" "}
-              <span className="bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent">
-                iki DI praktiko.
-              </span>
+            <h2 className="mt-6 font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.1]">
+              Kol kiti tik kalba, kiti jau dirba tai, kas vakar atrodė neįmanoma.
             </h2>
 
-            <p className="mt-6 text-lg text-cloud/65 leading-relaxed">
-              Buvęs Excel/PPT mentorius. Dabar — DI praktikas, padedantis
-              Lietuvos verslui augti greičiau.
-            </p>
-            <p className="mt-4 text-cloud/55 leading-relaxed">
-              Mano misija — paaiškinti dirbtinį intelektą paprastai, parodyti
-              tikrus pavyzdžius ir duoti įrankius, kuriuos galite naudoti
-              jau šiandien.
-            </p>
-
-            {/* Milestone numbers */}
-            <div className="mt-10 grid grid-cols-3 gap-4">
-              {milestones.map(({ value, label }, i) => (
-                <motion.div
-                  key={label}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-                  className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 text-center transition-all duration-300 hover:bg-white/[0.04] hover:border-white/[0.1]"
-                >
-                  <p className="font-display text-2xl md:text-3xl font-bold bg-gradient-to-br from-white to-cloud/70 bg-clip-text text-transparent">
-                    {value}
-                  </p>
-                  <p className="text-xs text-cloud/45 mt-1 uppercase tracking-wider">
-                    {label}
-                  </p>
-                </motion.div>
-              ))}
+            <div className="mt-8 space-y-5 text-cloud/70 leading-relaxed text-base md:text-lg">
+              <p>
+                Dar visai neseniai vienai kokybiškai prezentacijai ar išsamiai ataskaitai paruošti man reikėdavo visos dienos. Duomenų rinkimas, formatavimas, tekstų rašymas – procesai strigdavo, o rutina tiesiog žudydavo motyvaciją.
+              </p>
+              <p>
+                Taip atrodė mano kasdienybė. Kol visko nepakeitė dirbtinis intelektas. Susikūriau asmeninį asistentą, kuris dabar valdo mano projektus: analizuoja duomenis, konstruoja svetaines, paruošia ataskaitas ir net atrašo į dalį laiškų. <strong>Dirba 24/7. Ir niekada nepavargsta.</strong>
+              </p>
+              <p>
+                Tačiau pastebėjau problemą: Lietuvoje visi tik kalba apie AI galimybes, bet niekas neparodo <em>kaip tai padaryti praktiškai</em>. Niekas nepasodina ir nepasako: „Štai, spausk čia ir daryk taip“.
+              </p>
+              <p className="font-semibold text-white">
+                Būtent todėl sukūriau šį gidą. 30 minučių, ir jūs turite veikiantį, pilnai sukonfigūruotą asistentą. Be jokio programavimo.
+              </p>
             </div>
 
             {/* CTA */}
@@ -134,16 +115,18 @@ export default function About() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="mt-10"
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <a
-                href="#hero"
-                className="group inline-flex items-center gap-2 rounded-xl border border-gold/40 bg-gold/5 px-7 py-4 text-sm font-semibold text-gold transition-all hover:bg-gold/10 hover:border-gold/60 hover:shadow-[0_0_30px_rgba(255,222,89,0.12)]"
-              >
-                Pradėkime kartu
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-              </a>
+              <div className="mt-8 border-t border-white/5 pt-8">
+                <p className="text-cloud/80 mb-6 font-medium">Būtent todėl sukūriau šį gidą – kad Jums nereikėtų klysti ten, kur klydau aš.</p>
+                <a
+                  href="#kaina"
+                  className="group inline-flex items-center gap-3 rounded-xl bg-gold px-6 py-3.5 text-sm font-bold text-navy transition-all hover:bg-gold-light hover:shadow-[0_0_20px_rgba(255,222,89,0.3)] w-full sm:w-auto justify-center"
+                >
+                  Gauti AI Asistentą
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                </a>
+              </div>
             </motion.div>
           </motion.div>
         </div>
