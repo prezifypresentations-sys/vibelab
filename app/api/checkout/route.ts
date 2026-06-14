@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
-// Initialize Stripe (will fail gracefully if key is missing during build, but required at runtime)
-const stripeKey = process.env.STRIPE_SECRET_KEY || "";
+// Initialize Stripe (will fail gracefully at runtime if key is dummy, but allows build to succeed)
+const stripeKey = process.env.STRIPE_SECRET_KEY || "sk_test_dummy";
 const stripe = new Stripe(stripeKey, {
   apiVersion: "2026-05-27.dahlia" as any,
 });
