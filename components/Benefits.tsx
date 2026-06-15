@@ -77,9 +77,9 @@ export default function Benefits() {
                 key={pillar.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="mobile-static group relative rounded-3xl border border-white/[0.08] bg-white/[0.02] p-8 md:p-10 backdrop-blur-sm transition-all hover:bg-white/[0.04]"
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="group relative rounded-3xl border border-white/[0.08] bg-white/[0.02] p-8 md:p-10 backdrop-blur-sm transition-all hover:bg-white/[0.04]"
               >
                 {/* Header */}
                 <div className="flex items-center gap-5 mb-8 pb-8 border-b border-white/[0.08]">
@@ -104,11 +104,11 @@ export default function Benefits() {
                   {pillar.items.map((item, itemIdx) => (
                     <motion.li
                       key={itemIdx}
-                      initial={{ opacity: 0, x: -10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: idx * 0.1 + itemIdx * 0.1 }}
-                      className="mobile-static flex items-start gap-3"
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, amount: 0.2 }}
+                      transition={{ duration: 0.5, ease: "easeOut" }}
+                      className="flex items-start gap-3"
                     >
                       <CheckCircle2
                         className={`h-5 w-5 shrink-0 mt-0.5 ${

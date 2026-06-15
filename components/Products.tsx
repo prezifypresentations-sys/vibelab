@@ -22,28 +22,31 @@ export default function Products() {
           
           {/* Left Column: Urgency Text */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mobile-static text-left"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="text-left"
           >
             <p className="text-electric font-bold tracking-wider text-sm uppercase mb-4">
               Kodėl dabar?
             </p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Laikas keistis.
+              Technologijos keičiasi kasdien.
             </h2>
+            <h3 className="text-2xl sm:text-3xl font-semibold text-cloud/80 mb-8">
+              Tačiau jums nereikia tapti programuotoju.
+            </h3>
             
             <div className="space-y-6 text-lg text-cloud/70 leading-relaxed">
               <p>
-                Jums nebūtina sekti AI naujienų ar tapti programuotoju. Jums reikia tik vieno:
+                Jums nebūtina sekti kiekvienos naujienos ar mokytis sudėtingų sistemų. Jums trūksta tik vieno, paties brangiausio resurso:
               </p>
               <p className="text-2xl font-bold text-white py-2">
-                Daugiau laiko.
+                Laiko verslo augimui.
               </p>
               <p>
-                Kai deleguojate savo rutiną dirbtiniam intelektui, jūs pagaliau galite dirbti PRIE verslo, o ne JAME.
+                Kai deleguojate savo rutiną dirbtiniam intelektui – viskas pasikeičia. Išauga komandos produktyvumas, pagreitėja klientų aptarnavimas ir jūs pagaliau galite dirbti PRIE verslo, o ne JAME.
               </p>
             </div>
           </motion.div>
@@ -52,9 +55,9 @@ export default function Products() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mobile-static w-full max-w-md mx-auto lg:mx-0 lg:ml-auto"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="w-full max-w-md mx-auto lg:mx-0 lg:ml-auto"
           >
             <div className="rounded-[2rem] bg-[#0A0F1E] border border-white/10 p-8 shadow-2xl relative overflow-hidden">
               {/* Card Background Glow */}
@@ -124,10 +127,10 @@ export default function Products() {
                 </div>
                 <div className="h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
                   <motion.div 
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "93%" }}
-                    transition={{ duration: 1.5, delay: 0.5 }}
-                    className="mobile-static h-full bg-gradient-to-r from-[#ff4d4d] to-[#ff4d4d] rounded-full"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
+                    className="h-full bg-gradient-to-r from-[#ff4d4d] to-[#ff4d4d] rounded-full"
                   />
                 </div>
                 <p className="text-xs text-center text-cloud/50 mt-3">

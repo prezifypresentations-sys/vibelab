@@ -58,11 +58,11 @@ export default function WhoIsThisFor() {
             return (
               <motion.div
                 key={profile.title}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="mobile-static group flex flex-col items-center rounded-2xl border border-white/[0.05] bg-white/[0.02] p-8 text-center transition-all hover:bg-white/[0.04] hover:border-white/10"
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="group flex flex-col items-center rounded-2xl border border-white/[0.05] bg-white/[0.02] p-8 text-center transition-all hover:bg-white/[0.04] hover:border-white/10"
               >
                 <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-gold/10 text-gold transition-transform duration-300 group-hover:scale-110">
                   <Icon className="h-8 w-8" />
@@ -82,9 +82,9 @@ export default function WhoIsThisFor() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mobile-static mt-20 mx-auto max-w-4xl rounded-3xl border border-green-500/20 bg-gradient-to-r from-green-500/10 via-transparent to-green-500/10 p-8 md:p-12 text-center relative overflow-hidden backdrop-blur-sm"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="mt-20 mx-auto max-w-4xl rounded-3xl border border-green-500/20 bg-gradient-to-r from-green-500/10 via-transparent to-green-500/10 p-8 md:p-12 text-center relative overflow-hidden backdrop-blur-sm"
         >
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay pointer-events-none" />
           <h3 className="font-display text-3xl font-bold text-green-400 mb-4">

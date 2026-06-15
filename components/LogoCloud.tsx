@@ -16,30 +16,30 @@ export default function LogoCloud() {
     <section className="relative py-16 md:py-20 border-t border-white/5">
       <div className="mx-auto max-w-7xl px-6">
         <motion.p
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mobile-static text-center text-sm uppercase tracking-[0.2em] text-cloud/40 font-medium"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="text-center text-sm uppercase tracking-[0.2em] text-cloud/40 font-medium"
         >
           Mumis pasitiki pirmaujančios įmonės
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="mobile-static mt-10 grid grid-cols-3 sm:grid-cols-6 gap-8 items-center"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="mt-10 grid grid-cols-3 sm:grid-cols-6 gap-8 items-center"
         >
           {logos.map((logo, i) => (
             <motion.div
               key={logo.name}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
-              className="mobile-static grayscale-hover flex flex-col items-center justify-center gap-2 py-4 cursor-default"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="grayscale-hover flex flex-col items-center justify-center gap-2 py-4 cursor-default"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.06] border border-white/10">
                 <span className="font-display text-lg font-bold text-cloud/60">
