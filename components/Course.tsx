@@ -68,7 +68,7 @@ export default function Course() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-            className="will-change-transform lg:col-span-7"
+            className="mobile-static will-change-transform lg:col-span-7"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-electric/30 bg-electric/10 px-4 py-1.5 text-xs font-medium text-electric-light">
               <Clock className="h-3 w-3" />
@@ -97,7 +97,7 @@ export default function Course() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
-                  className="group flex items-start gap-3 rounded-xl border border-white/[0.08] bg-white/[0.02] px-4 py-3.5 transition-all duration-300 hover:bg-white/[0.05] hover:border-white/15"
+                  className="mobile-static group flex items-start gap-3 rounded-xl border border-white/[0.08] bg-white/[0.02] px-4 py-3.5 transition-all duration-300 hover:bg-white/[0.05] hover:border-white/15"
                 >
                   <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-electric/10">
                     <Icon className="h-4 w-4 text-electric-light" />
@@ -134,7 +134,7 @@ export default function Course() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.5 }}
-            className="will-change-transform lg:col-span-5"
+            className="mobile-static will-change-transform lg:col-span-5"
             style={{ perspective: "1000px" }}
           >
             <div className="relative rounded-2xl border border-white/[0.08] bg-gradient-to-br from-white/[0.06] to-white/[0.01] p-8 backdrop-blur-sm overflow-hidden">
@@ -166,7 +166,7 @@ export default function Course() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.3 + i * 0.06 }}
-                    className="flex items-center gap-3 text-cloud/80 group/item"
+                    className="mobile-static flex items-center gap-3 text-cloud/80 group/item"
                   >
                     <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-gold/10 text-xs font-bold text-gold ring-1 ring-gold/20 transition-all group-hover/item:bg-gold/20 group-hover/item:ring-gold/40">
                       <Check className="h-3.5 w-3.5" />
@@ -186,7 +186,7 @@ export default function Course() {
       <AnimatePresence>
         {isModalOpen && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 sm:p-12">
-            <motion.div
+            <motion.div className="mobile-static"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -198,7 +198,7 @@ export default function Course() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-navy shadow-2xl"
+              className="mobile-static relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-navy shadow-2xl"
             >
               {/* Modal Header */}
               <div className="flex items-center justify-between border-b border-white/5 bg-white/[0.02] px-8 py-6">

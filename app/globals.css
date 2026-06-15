@@ -43,6 +43,13 @@
     .will-change-transform {
       will-change: auto !important;
     }
+    
+    /* Force framer motion elements to their final static state on mobile */
+    .mobile-static {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
   }
 }
 

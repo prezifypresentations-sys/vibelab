@@ -46,7 +46,7 @@ export default function SectionHeading({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "0px 0px -50px 0px" }}
         transition={{ duration: 0.6, delay: 0.05 }}
-        className="will-change-transform mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
+        className="mobile-static will-change-transform mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
       >
         {title}
       </motion.h2>

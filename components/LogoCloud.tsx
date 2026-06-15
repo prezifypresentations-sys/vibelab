@@ -20,7 +20,7 @@ export default function LogoCloud() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center text-sm uppercase tracking-[0.2em] text-cloud/40 font-medium"
+          className="mobile-static text-center text-sm uppercase tracking-[0.2em] text-cloud/40 font-medium"
         >
           Mumis pasitiki pirmaujančios įmonės
         </motion.p>
@@ -30,7 +30,7 @@ export default function LogoCloud() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mt-10 grid grid-cols-3 sm:grid-cols-6 gap-8 items-center"
+          className="mobile-static mt-10 grid grid-cols-3 sm:grid-cols-6 gap-8 items-center"
         >
           {logos.map((logo, i) => (
             <motion.div
@@ -39,7 +39,7 @@ export default function LogoCloud() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
-              className="grayscale-hover flex flex-col items-center justify-center gap-2 py-4 cursor-default"
+              className="mobile-static grayscale-hover flex flex-col items-center justify-center gap-2 py-4 cursor-default"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.06] border border-white/10">
                 <span className="font-display text-lg font-bold text-cloud/60">

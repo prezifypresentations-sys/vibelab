@@ -21,7 +21,7 @@ export default function Navbar() {
         initial={{ y: -24, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="fixed top-0 inset-x-0 z-50 border-b border-white/5 bg-navy/80 backdrop-blur-xl"
+        className="mobile-static fixed top-0 inset-x-0 z-50 border-b border-white/5 bg-navy/80 backdrop-blur-xl"
       >
         <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
           <Link
@@ -75,11 +75,11 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-navy/95 backdrop-blur-xl flex flex-col items-center justify-center"
+            className="mobile-static fixed inset-0 z-40 bg-navy/95 backdrop-blur-xl flex flex-col items-center justify-center"
           >
             <nav className="flex flex-col items-center gap-8">
               {navLinks.map((link, i) => (
-                <motion.a
+                <motion.a className="mobile-static"
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
@@ -91,7 +91,7 @@ export default function Navbar() {
                   {link.label}
                 </motion.a>
               ))}
-              <motion.a
+              <motion.a className="mobile-static"
                 href="#kaina"
                 onClick={() => setMobileOpen(false)}
                 initial={{ opacity: 0, y: 20 }}

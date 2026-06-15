@@ -95,7 +95,7 @@ export default function Skills() {
                 whileInView="visible"
                 viewport={{ once: true, margin: "0px 0px -50px 0px" }}
                 variants={cardVariants}
-                className="will-change-transform group relative rounded-2xl border border-white/[0.08] bg-white/[0.02] p-7 backdrop-blur-sm transition-all duration-500 hover:bg-white/[0.06] hover:translate-y-[-4px] hover:shadow-[0_16px_50px_-12px_rgba(255,222,89,0.1)]"
+                className="mobile-static will-change-transform group relative rounded-2xl border border-white/[0.08] bg-white/[0.02] p-7 backdrop-blur-sm transition-all duration-500 hover:bg-white/[0.06] hover:translate-y-[-4px] hover:shadow-[0_16px_50px_-12px_rgba(255,222,89,0.1)]"
               >
                 {/* Top gradient line on hover */}
                 <div

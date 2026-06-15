@@ -97,7 +97,7 @@ export default function StatsBar() {
                   delay: i * 0.15,
                   ease: [0.25, 1, 0.5, 1],
                 }}
-                className="will-change-transform group flex flex-col items-center text-center rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-500 hover:bg-white/[0.05] hover:border-white/[0.12] hover:translate-y-[-4px]"
+                className="mobile-static will-change-transform group flex flex-col items-center text-center rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-500 hover:bg-white/[0.05] hover:border-white/[0.12] hover:translate-y-[-4px]"
               >
                 <div
                   className={`mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${stat.gradient} shadow-lg transition-transform duration-500 group-hover:scale-110`}

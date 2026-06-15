@@ -26,7 +26,7 @@ export default function MobileStickyCTA() {
       initial={{ y: 100 }}
       animate={{ y: 0 }}
       exit={{ y: 100 }}
-      className="fixed bottom-0 inset-x-0 z-50 p-4 md:hidden"
+      className="mobile-static fixed bottom-0 inset-x-0 z-50 p-4 md:hidden"
     >
       <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/90 to-transparent -z-10" />
       

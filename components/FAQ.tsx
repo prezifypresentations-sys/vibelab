@@ -60,7 +60,7 @@ export default function FAQ() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-sm transition-colors hover:bg-white/[0.04]"
+                className="mobile-static overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-sm transition-colors hover:bg-white/[0.04]"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
@@ -80,7 +80,7 @@ export default function FAQ() {
 
                 <AnimatePresence>
                   {isOpen && (
-                    <motion.div
+                    <motion.div className="mobile-static"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}

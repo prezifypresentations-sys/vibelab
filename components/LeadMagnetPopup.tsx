@@ -59,7 +59,7 @@ export default function LeadMagnetPopup() {
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center p-4 py-12 sm:py-4 overflow-y-auto">
           {/* Backdrop */}
-          <motion.div
+          <motion.div className="mobile-static"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -73,7 +73,7 @@ export default function LeadMagnetPopup() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
             transition={{ type: "spring", duration: 0.5, bounce: 0.3 }}
-            className="relative w-full max-w-md rounded-3xl border border-white/10 bg-navy p-6 sm:p-8 shadow-[0_0_80px_rgba(11,95,255,0.15)] overflow-hidden"
+            className="mobile-static relative w-full max-w-md rounded-3xl border border-white/10 bg-navy p-6 sm:p-8 shadow-[0_0_80px_rgba(11,95,255,0.15)] overflow-hidden"
           >
             {/* Close Button */}
             <button

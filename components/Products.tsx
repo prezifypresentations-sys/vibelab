@@ -26,27 +26,24 @@ export default function Products() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-left"
+            className="mobile-static text-left"
           >
             <p className="text-electric font-bold tracking-wider text-sm uppercase mb-4">
               Kodėl dabar?
             </p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Technologijos keičiasi kasdien.
+              Laikas keistis.
             </h2>
-            <h3 className="text-2xl sm:text-3xl font-semibold text-cloud/80 mb-8">
-              Tačiau jums nereikia tapti programuotoju.
-            </h3>
             
             <div className="space-y-6 text-lg text-cloud/70 leading-relaxed">
               <p>
-                Jums nebūtina sekti kiekvienos naujienos ar mokytis sudėtingų sistemų. Jums trūksta tik vieno, paties brangiausio resurso:
+                Jums nebūtina sekti AI naujienų ar tapti programuotoju. Jums reikia tik vieno:
               </p>
               <p className="text-2xl font-bold text-white py-2">
-                Laiko verslo augimui.
+                Daugiau laiko.
               </p>
               <p>
-                Kai deleguojate savo rutiną dirbtiniam intelektui – viskas pasikeičia. Išauga komandos produktyvumas, pagreitėja klientų aptarnavimas ir jūs pagaliau galite dirbti PRIE verslo, o ne JAME.
+                Kai deleguojate savo rutiną dirbtiniam intelektui, jūs pagaliau galite dirbti PRIE verslo, o ne JAME.
               </p>
             </div>
           </motion.div>
@@ -57,7 +54,7 @@ export default function Products() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="w-full max-w-md mx-auto lg:mx-0 lg:ml-auto"
+            className="mobile-static w-full max-w-md mx-auto lg:mx-0 lg:ml-auto"
           >
             <div className="rounded-[2rem] bg-[#0A0F1E] border border-white/10 p-8 shadow-2xl relative overflow-hidden">
               {/* Card Background Glow */}
@@ -130,7 +127,7 @@ export default function Products() {
                     initial={{ width: 0 }}
                     whileInView={{ width: "93%" }}
                     transition={{ duration: 1.5, delay: 0.5 }}
-                    className="h-full bg-gradient-to-r from-[#ff4d4d] to-[#ff4d4d] rounded-full"
+                    className="mobile-static h-full bg-gradient-to-r from-[#ff4d4d] to-[#ff4d4d] rounded-full"
                   />
                 </div>
                 <p className="text-xs text-center text-cloud/50 mt-3">

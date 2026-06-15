@@ -34,7 +34,7 @@ export default function CTABand() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="relative"
+            className="mobile-static relative"
           >
             <div className="inline-flex items-center gap-2 rounded-full bg-navy/15 px-4 py-1.5 text-xs font-medium text-navy/80 mb-6 border border-navy/20">
               <Zap className="h-3.5 w-3.5" />

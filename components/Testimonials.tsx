@@ -87,7 +87,7 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-medium text-gold"
+            className="mobile-static inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-medium text-gold"
           >
             Atsiliepimai
           </motion.span>
@@ -97,7 +97,7 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.6, delay: 0.05 }}
-            className="will-change-transform mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
+            className="mobile-static will-change-transform mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
           >
             Klientų{" "}
             <span className="gradient-underline bg-gradient-to-r from-gold to-electric-light bg-clip-text text-transparent">
@@ -110,7 +110,7 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="will-change-transform mt-4 flex items-center justify-center gap-3"
+            className="mobile-static will-change-transform mt-4 flex items-center justify-center gap-3"
           >
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
@@ -136,7 +136,7 @@ export default function Testimonials() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-14 -mx-6 px-6 overflow-x-auto hide-scrollbar"
+          className="mobile-static mt-14 -mx-6 px-6 overflow-x-auto hide-scrollbar"
         >
           <div className="flex gap-5 pb-4" style={{ width: "max-content" }}>
             {testimonials.map((t, i) => (
@@ -146,7 +146,7 @@ export default function Testimonials() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
-                className="gradient-border-card w-[340px] sm:w-[380px] flex-shrink-0 p-7 transition-all duration-300 hover:bg-white/[0.06] hover:translate-y-[-4px]"
+                className="mobile-static gradient-border-card w-[340px] sm:w-[380px] flex-shrink-0 p-7 transition-all duration-300 hover:bg-white/[0.06] hover:translate-y-[-4px]"
               >
                 <span className="font-display text-5xl font-bold leading-none bg-gradient-to-br from-gold/40 to-electric/40 bg-clip-text text-transparent select-none">
                   &ldquo;

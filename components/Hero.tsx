@@ -96,7 +96,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-5 py-2 text-xs font-medium text-gold backdrop-blur-sm mb-6"
+            className="mobile-static inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-5 py-2 text-xs font-medium text-gold backdrop-blur-sm mb-6"
           >
             <Sparkles className="h-3.5 w-3.5" />
             Pirmieji Lietuvoje pristatome pilną sprendimą
@@ -106,7 +106,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-white drop-shadow-[0_0_40px_rgba(255,222,89,0.15)]"
+            className="mobile-static font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-white drop-shadow-[0_0_40px_rgba(255,222,89,0.15)]"
           >
             Sukūrėme AI asistentą,
             <br />
@@ -119,7 +119,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="mt-8 mx-auto max-w-2xl text-lg md:text-xl text-cloud/80 leading-relaxed"
+            className="mobile-static mt-8 mx-auto max-w-2xl text-lg md:text-xl text-cloud/80 leading-relaxed"
           >
             Jis atsako į laiškus, kuria prezentacijas, analizuoja duomenis, konstruoja svetaines ir planuoja tavo savaitę. Viskas be kodavimo žinių.{" "}
             <span className="text-white font-medium block mt-2">Dabar atiduodame jį tau. Sutaupyk bent 2 valandas kiekvieną dieną.</span>
@@ -129,7 +129,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35 }}
-            className="mt-10 flex flex-col items-center justify-center gap-4"
+            className="mobile-static mt-10 flex flex-col items-center justify-center gap-4"
           >
             <a
               href="#kaina"
