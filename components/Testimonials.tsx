@@ -85,7 +85,7 @@ export default function Testimonials() {
           <motion.span
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
             transition={{ duration: 0.5 }}
             className="inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-medium text-gold"
           >
@@ -95,8 +95,8 @@ export default function Testimonials() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-            transition={{ duration: 0.6, delay: 0.05 }}
+            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+            transition={{ duration: 0.6}}
             className="will-change-transform mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
           >
             Klientų{" "}
@@ -108,8 +108,8 @@ export default function Testimonials() {
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-            transition={{ duration: 0.5, delay: 0.15 }}
+            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+            transition={{ duration: 0.5}}
             className="will-change-transform mt-4 flex items-center justify-center gap-3"
           >
             <div className="flex gap-1">
@@ -134,8 +134,8 @@ export default function Testimonials() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+          transition={{ duration: 0.6}}
           className="mt-14 -mx-6 px-6 overflow-x-auto hide-scrollbar"
         >
           <div className="flex gap-5 pb-4" style={{ width: "max-content" }}>
@@ -144,8 +144,8 @@ export default function Testimonials() {
                 key={t.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
+                viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                transition={{ duration: 0.5}}
                 className="gradient-border-card w-[340px] sm:w-[380px] flex-shrink-0 p-7 transition-all duration-300 hover:bg-white/[0.06] hover:translate-y-[-4px]"
               >
                 <span className="font-display text-5xl font-bold leading-none bg-gradient-to-br from-gold/40 to-electric/40 bg-clip-text text-transparent select-none">

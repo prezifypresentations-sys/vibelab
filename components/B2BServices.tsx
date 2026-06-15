@@ -25,7 +25,7 @@ export default function B2BServices() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "0px 0px -50px 0px" }}
+          viewport={{ once: true, margin: "0px 0px 50px 0px" }}
           transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
           className="will-change-transform relative mx-auto max-w-6xl rounded-3xl border border-white/[0.08] bg-gradient-to-br from-white/[0.04] via-white/[0.02] to-white/[0.01] overflow-hidden"
         >
@@ -69,8 +69,8 @@ export default function B2BServices() {
                       key={label}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
+                      viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                      transition={{ duration: 0.5}}
                       className="group flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 transition-all duration-300 hover:bg-white/[0.05] hover:border-white/[0.12]"
                     >
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gold/10 ring-1 ring-gold/20 transition-all group-hover:bg-gold/15 group-hover:ring-gold/35">

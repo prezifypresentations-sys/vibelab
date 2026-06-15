@@ -77,8 +77,8 @@ export default function Benefits() {
                 key={pillar.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                transition={{ duration: 0.6}}
                 className="group relative rounded-3xl border border-white/[0.08] bg-white/[0.02] p-8 md:p-10 backdrop-blur-sm transition-all hover:bg-white/[0.04]"
               >
                 {/* Header */}
@@ -106,8 +106,8 @@ export default function Benefits() {
                       key={itemIdx}
                       initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: idx * 0.1 + itemIdx * 0.1 }}
+                      viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                      transition={{ duration: 0.4}}
                       className="flex items-start gap-3"
                     >
                       <CheckCircle2
