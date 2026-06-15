@@ -23,7 +23,7 @@ export default function MobileStickyCTA() {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={{ y: 0 }}
       exit={{ y: 100 }}
       className="fixed bottom-0 inset-x-0 z-50 p-4 md:hidden"

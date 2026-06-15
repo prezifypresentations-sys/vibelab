@@ -64,10 +64,10 @@ export default function Course() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left: Content */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true, margin: "0px 0px -20px 0px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="will-change-transform lg:col-span-7"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-electric/30 bg-electric/10 px-4 py-1.5 text-xs font-medium text-electric-light">
@@ -93,10 +93,10 @@ export default function Course() {
               {highlights.map(({ icon: Icon, label, desc }, i) => (
                 <motion.div
                   key={label}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  viewport={{ once: true, margin: "0px 0px -20px 0px" }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
                   className="group flex items-start gap-3 rounded-xl border border-white/[0.08] bg-white/[0.02] px-4 py-3.5 transition-all duration-300 hover:bg-white/[0.05] hover:border-white/15"
                 >
                   <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-electric/10">
@@ -130,10 +130,10 @@ export default function Course() {
 
           {/* Right: Module card */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true, margin: "0px 0px -20px 0px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="will-change-transform lg:col-span-5"
             style={{ perspective: "1000px" }}
           >
@@ -162,10 +162,10 @@ export default function Course() {
                 {modules.map((item, i) => (
                   <motion.li
                     key={item.title}
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.2 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
+                    viewport={{ once: true, margin: "0px 0px -20px 0px" }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
                     className="flex items-center gap-3 text-cloud/80 group/item"
                   >
                     <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-gold/10 text-xs font-bold text-gold ring-1 ring-gold/20 transition-all group-hover/item:bg-gold/20 group-hover/item:ring-gold/40">
@@ -187,7 +187,7 @@ export default function Course() {
         {isModalOpen && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 sm:p-12">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsModalOpen(false)}
@@ -195,7 +195,7 @@ export default function Course() {
             />
             
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               className="relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-navy shadow-2xl"

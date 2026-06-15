@@ -109,9 +109,18 @@ export default function Hero() {
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-white drop-shadow-[0_0_40px_rgba(255,222,89,0.15)]"
           >
             Sukūrėme AI asistentą,
-            <br />
-            <span className="gradient-underline bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent">
-              kuris dirba vietoje tavęs.
+            <br className="hidden sm:block" />{" "}
+            <span className="relative inline-block mt-1 sm:mt-0">
+              <span className="bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent">
+                kuris dirba vietoje tavęs.
+              </span>
+              {/* Shorter, centered underline with fading edges */}
+              <motion.span 
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[70%] h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent opacity-70" 
+              />
             </span>
           </motion.h1>
 

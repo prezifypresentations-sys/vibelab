@@ -30,10 +30,10 @@ export default function CTABand() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[200px] w-[400px] rounded-full bg-white/15 blur-[80px] pointer-events-none" />
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true, margin: "0px 0px -20px 0px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="relative"
           >
             <div className="inline-flex items-center gap-2 rounded-full bg-navy/15 px-4 py-1.5 text-xs font-medium text-navy/80 mb-6 border border-navy/20">

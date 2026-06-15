@@ -26,10 +26,10 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left: Photo card */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true, margin: "0px 0px -20px 0px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="will-change-transform lg:col-span-5"
             style={{ perspective: "1000px" }}
           >
@@ -80,10 +80,10 @@ export default function About() {
 
           {/* Right: Content */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true, margin: "0px 0px -20px 0px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="will-change-transform lg:col-span-7"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-medium text-gold">
@@ -112,10 +112,10 @@ export default function About() {
 
             {/* CTA */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              viewport={{ once: true, margin: "0px 0px -20px 0px" }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <div className="mt-8 border-t border-white/5 pt-8">
                 <p className="text-cloud/80 mb-6 font-medium">Būtent todėl sukūriau šį gidą – kad Jums nereikėtų klysti ten, kur klydau aš.</p>
