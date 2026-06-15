@@ -124,15 +124,28 @@ export default function Hero() {
             </span>
           </motion.h1>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="mt-8 mx-auto max-w-2xl text-lg md:text-xl text-cloud/80 leading-relaxed"
+            className="mt-10 mx-auto max-w-2xl text-lg md:text-xl text-cloud/80 leading-relaxed font-light"
           >
-            Jis atsako į laiškus, kuria prezentacijas, analizuoja duomenis, konstruoja svetaines ir planuoja tavo savaitę. Viskas be kodavimo žinių.{" "}
-            <span className="text-white font-medium block mt-2">Dabar atiduodame jį tau. Sutaupyk bent 2 valandas kiekvieną dieną.</span>
-          </motion.p>
+            <p className="max-w-xl mx-auto">
+              Deleguok savo rutiną dirbtiniam intelektui. Išlaisvink laiką tam, kas iš tiesų svarbu tavo verslui.
+            </p>
+            
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-base font-medium text-cloud/90 bg-white/[0.03] rounded-2xl py-3 px-6 border border-white/[0.05] w-fit mx-auto">
+              <span className="flex items-center gap-2"><Sparkles className="h-4 w-4 text-gold"/> Analizuoja failus</span>
+              <span className="hidden sm:inline text-white/20">•</span>
+              <span className="flex items-center gap-2"><Sparkles className="h-4 w-4 text-gold"/> Kuria prezentacijas</span>
+              <span className="hidden sm:inline text-white/20">•</span>
+              <span className="flex items-center gap-2"><Sparkles className="h-4 w-4 text-gold"/> Nereikia koduoti</span>
+            </div>
+
+            <span className="text-white font-semibold block mt-8 text-xl tracking-wide">
+              Sutaupyk bent 2 valandas <span className="text-gold">kasdien.</span>
+            </span>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

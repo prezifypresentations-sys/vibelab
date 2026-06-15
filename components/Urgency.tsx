@@ -47,10 +47,10 @@ export default function Urgency() {
             return (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "0px 0px -20px 0px" }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
                 className="group relative rounded-2xl border border-white/[0.08] bg-white/[0.02] p-8 text-center transition-all hover:bg-white/[0.04]"
               >
                 <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-xl bg-gold/10 ring-1 ring-gold/20 mb-6">
@@ -67,10 +67,10 @@ export default function Urgency() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "0px 0px -20px 0px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="mt-16 rounded-3xl border border-gold/10 bg-gradient-to-br from-gold/[0.05] to-transparent p-8 md:p-12 text-center"
         >
           <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-gold/20 mb-6">

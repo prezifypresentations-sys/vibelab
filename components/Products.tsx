@@ -22,41 +22,38 @@ export default function Products() {
           
           {/* Left Column: Urgency Text */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px -20px 0px" }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-left"
           >
             <p className="text-electric font-bold tracking-wider text-sm uppercase mb-4">
               Kodėl dabar?
             </p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Technologijos keičiasi kasdien.
+              Laikas keistis.
             </h2>
-            <h3 className="text-2xl sm:text-3xl font-semibold text-cloud/80 mb-8">
-              Tačiau jums nereikia tapti programuotoju.
-            </h3>
             
             <div className="space-y-6 text-lg text-cloud/70 leading-relaxed">
               <p>
-                Jums nebūtina sekti kiekvienos naujienos ar mokytis sudėtingų sistemų. Jums trūksta tik vieno, paties brangiausio resurso:
+                Jums nebūtina sekti AI naujienų ar tapti programuotoju. Jums reikia tik vieno:
               </p>
               <p className="text-2xl font-bold text-white py-2">
-                Laiko verslo augimui.
+                Daugiau laiko.
               </p>
               <p>
-                Kai deleguojate savo rutiną dirbtiniam intelektui – viskas pasikeičia. Išauga komandos produktyvumas, pagreitėja klientų aptarnavimas ir jūs pagaliau galite dirbti PRIE verslo, o ne JAME.
+                Kai deleguojate savo rutiną dirbtiniam intelektui, jūs pagaliau galite dirbti PRIE verslo, o ne JAME.
               </p>
             </div>
           </motion.div>
 
           {/* Right Column: Pricing Card */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px -20px 0px" }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="w-full max-w-md mx-auto lg:mx-0 lg:ml-auto"
           >
             <div className="rounded-[2rem] bg-[#0A0F1E] border border-white/10 p-8 shadow-2xl relative overflow-hidden">
@@ -127,9 +124,9 @@ export default function Products() {
                 </div>
                 <div className="h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
                   <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
                     className="h-full bg-gradient-to-r from-[#ff4d4d] to-[#ff4d4d] rounded-full"
                   />
                 </div>
