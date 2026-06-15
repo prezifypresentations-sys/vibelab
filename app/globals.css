@@ -59,10 +59,17 @@
     transform: translateY(0);
   }
   
-  /* On mobile, use a much smaller transform to completely prevent layout thrashing */
+  /* On mobile, completely disable the animation and set to static to prevent any GPU flickering */
   @media (max-width: 768px) {
     .animate-on-scroll {
-      transform: translateY(10px);
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+      will-change: auto !important;
+    }
+    .animate-on-scroll.is-visible {
+      opacity: 1 !important;
+      transform: none !important;
     }
   }
 }
