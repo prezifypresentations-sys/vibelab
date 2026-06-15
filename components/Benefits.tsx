@@ -75,9 +75,9 @@ export default function Benefits() {
             return (
               <motion.div
                 key={pillar.title}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 className="group relative rounded-3xl border border-white/[0.08] bg-white/[0.02] p-8 md:p-10 backdrop-blur-sm transition-all hover:bg-white/[0.04]"
               >
@@ -104,9 +104,9 @@ export default function Benefits() {
                   {pillar.items.map((item, itemIdx) => (
                     <motion.li
                       key={itemIdx}
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                      initial={{ opacity: 0, y: 15 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-40px" }}
                       transition={{ duration: 0.5, ease: "easeOut" }}
                       className="flex items-start gap-3"
                     >

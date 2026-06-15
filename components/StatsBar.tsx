@@ -89,9 +89,9 @@ export default function StatsBar() {
             return (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 className="will-change-transform group flex flex-col items-center text-center rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-500 hover:bg-white/[0.05] hover:border-white/[0.12] hover:translate-y-[-4px]"
               >

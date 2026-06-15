@@ -23,9 +23,9 @@ export default function B2BServices() {
 
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="will-change-transform relative mx-auto max-w-6xl rounded-3xl border border-white/[0.08] bg-gradient-to-br from-white/[0.04] via-white/[0.02] to-white/[0.01] overflow-hidden"
         >
@@ -67,9 +67,9 @@ export default function B2BServices() {
                   {items.map(({ icon: Icon, label, desc }, i) => (
                     <motion.div
                       key={label}
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                      initial={{ opacity: 0, y: 15 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-40px" }}
                       transition={{ duration: 0.5, ease: "easeOut" }}
                       className="group flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 transition-all duration-300 hover:bg-white/[0.05] hover:border-white/[0.12]"
                     >

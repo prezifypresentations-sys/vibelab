@@ -58,9 +58,9 @@ export default function WhoIsThisFor() {
             return (
               <motion.div
                 key={profile.title}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 className="group flex flex-col items-center rounded-2xl border border-white/[0.05] bg-white/[0.02] p-8 text-center transition-all hover:bg-white/[0.04] hover:border-white/10"
               >
@@ -80,9 +80,9 @@ export default function WhoIsThisFor() {
 
         {/* Guarantee Banner */}
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mt-20 mx-auto max-w-4xl rounded-3xl border border-green-500/20 bg-gradient-to-r from-green-500/10 via-transparent to-green-500/10 p-8 md:p-12 text-center relative overflow-hidden backdrop-blur-sm"
         >

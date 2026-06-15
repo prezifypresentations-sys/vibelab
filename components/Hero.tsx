@@ -114,13 +114,15 @@ export default function Hero() {
               <span className="bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent">
                 kuris dirba vietoje tavęs.
               </span>
-              {/* Shorter, centered underline with fading edges */}
-              <motion.span 
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[70%] h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent opacity-70" 
-              />
+              {/* Shorter, centered underline with fading edges - wrapped to protect CSS transform */}
+              <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[70%] h-[2px]">
+                <motion.span 
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: 1 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                  className="block w-full h-full bg-gradient-to-r from-transparent via-gold to-transparent opacity-70" 
+                />
+              </span>
             </span>
           </motion.h1>
 

@@ -32,9 +32,9 @@ export default function SectionHeading({
     >
       {eyebrow && (
         <motion.span
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           className={`inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium ${eyebrowClasses}`}
         >
@@ -42,9 +42,9 @@ export default function SectionHeading({
         </motion.span>
       )}
       <motion.h2
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-40px" }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="will-change-transform mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
       >
@@ -52,9 +52,9 @@ export default function SectionHeading({
       </motion.h2>
       {subtitle && (
         <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           className={`mt-5 text-lg text-cloud/70 leading-relaxed ${
             align === "center" ? "mx-auto max-w-2xl" : ""

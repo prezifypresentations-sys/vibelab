@@ -64,9 +64,9 @@ export default function Course() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left: Content */}
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="will-change-transform lg:col-span-7"
           >
@@ -93,9 +93,9 @@ export default function Course() {
               {highlights.map(({ icon: Icon, label, desc }, i) => (
                 <motion.div
                   key={label}
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
                   className="group flex items-start gap-3 rounded-xl border border-white/[0.08] bg-white/[0.02] px-4 py-3.5 transition-all duration-300 hover:bg-white/[0.05] hover:border-white/15"
                 >
@@ -130,9 +130,9 @@ export default function Course() {
 
           {/* Right: Module card */}
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="will-change-transform lg:col-span-5"
             style={{ perspective: "1000px" }}
@@ -162,9 +162,9 @@ export default function Course() {
                 {modules.map((item, i) => (
                   <motion.li
                     key={item.title}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+                    initial={{ opacity: 0, y: 15 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-40px" }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                     className="flex items-center gap-3 text-cloud/80 group/item"
                   >
@@ -187,7 +187,7 @@ export default function Course() {
         {isModalOpen && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 sm:p-12">
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsModalOpen(false)}
@@ -195,8 +195,8 @@ export default function Course() {
             />
             
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               className="relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-navy shadow-2xl"
             >
