@@ -37,6 +37,13 @@
   .font-body {
     font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   }
+
+  /* Disable will-change on mobile to prevent GPU memory exhaustion and scroll glitching */
+  @media (max-width: 768px) {
+    .will-change-transform {
+      will-change: auto !important;
+    }
+  }
 }
 
 /* ═══════════════════════════════════════════════════

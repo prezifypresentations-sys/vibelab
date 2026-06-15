@@ -10,7 +10,7 @@ const ELECTRIC = { r: 11, g: 95, b: 255 };
 const WHITE = { r: 241, g: 245, b: 251 };
 
 const NODE_COUNT_DESKTOP = 100;
-const NODE_COUNT_MOBILE = 55;
+const NODE_COUNT_MOBILE = 25;
 const CONNECTION_DIST = 200;
 const MOUSE_RADIUS = 250;
 const PULSE_INTERVAL = 800;
