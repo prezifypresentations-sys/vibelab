@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ArrowRight, Building2, ShieldCheck, Globe2, Cpu, Zap } from "lucide-react";
 
 const items = [
@@ -22,12 +21,8 @@ export default function B2BServices() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="will-change-transform relative mx-auto max-w-6xl rounded-3xl border border-white/[0.08] bg-gradient-to-br from-white/[0.04] via-white/[0.02] to-white/[0.01] overflow-hidden"
+        <div
+          className="animate-on-scroll will-change-transform relative mx-auto max-w-6xl rounded-3xl border border-white/[0.08] bg-gradient-to-br from-white/[0.04] via-white/[0.02] to-white/[0.01] overflow-hidden"
         >
           {/* Inner glow effects */}
           <div className="absolute inset-0 pointer-events-none">
@@ -65,13 +60,9 @@ export default function B2BServices() {
                 {/* Service cards */}
                 <div className="mt-8 sm:mt-10 space-y-3 sm:space-y-4">
                   {items.map(({ icon: Icon, label, desc }, i) => (
-                    <motion.div
+                    <div
                       key={label}
-                      initial={{ opacity: 0, y: 15 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, margin: "-40px" }}
-                      transition={{ duration: 0.5, ease: "easeOut" }}
-                      className="group flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 transition-all duration-300 hover:bg-white/[0.05] hover:border-white/[0.12]"
+                      className="animate-on-scroll group flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 transition-all duration-300 hover:bg-white/[0.05] hover:border-white/[0.12]"
                     >
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gold/10 ring-1 ring-gold/20 transition-all group-hover:bg-gold/15 group-hover:ring-gold/35">
                         <Icon className="h-5 w-5 text-gold" />
@@ -80,7 +71,7 @@ export default function B2BServices() {
                         <p className="text-sm font-semibold text-white">{label}</p>
                         <p className="text-xs text-cloud/50 mt-0.5">{desc}</p>
                       </div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -112,7 +103,7 @@ export default function B2BServices() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

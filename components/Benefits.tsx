@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { MessageSquare, Target, Settings, PieChart, CheckCircle2 } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
@@ -73,13 +72,9 @@ export default function Benefits() {
             const isGold = pillar.color === "gold";
             
             return (
-              <motion.div
+              <div
                 key={pillar.title}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                className="group relative rounded-3xl border border-white/[0.08] bg-white/[0.02] p-8 md:p-10 backdrop-blur-sm transition-all hover:bg-white/[0.04]"
+                className="animate-on-scroll group relative rounded-3xl border border-white/[0.08] bg-white/[0.02] p-8 md:p-10 backdrop-blur-sm transition-all hover:bg-white/[0.04]"
               >
                 {/* Header */}
                 <div className="flex items-center gap-5 mb-8 pb-8 border-b border-white/[0.08]">
@@ -102,13 +97,9 @@ export default function Benefits() {
                 {/* List items */}
                 <ul className="space-y-4">
                   {pillar.items.map((item, itemIdx) => (
-                    <motion.li
+                    <li
                       key={itemIdx}
-                      initial={{ opacity: 0, y: 15 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, margin: "-40px" }}
-                      transition={{ duration: 0.5, ease: "easeOut" }}
-                      className="flex items-start gap-3"
+                      className="animate-on-scroll flex items-start gap-3"
                     >
                       <CheckCircle2
                         className={`h-5 w-5 shrink-0 mt-0.5 ${
@@ -118,10 +109,10 @@ export default function Benefits() {
                       <span className="text-cloud/80 leading-relaxed text-sm md:text-base">
                         {item}
                       </span>
-                    </motion.li>
+                    </li>
                   ))}
                 </ul>
-              </motion.div>
+              </div>
             );
           })}
         </div>

@@ -87,13 +87,9 @@ export default function StatsBar() {
           {stats.map((stat, i) => {
             const Icon = stat.icon;
             return (
-              <motion.div
+              <div
                 key={stat.label}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                className="will-change-transform group flex flex-col items-center text-center rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-500 hover:bg-white/[0.05] hover:border-white/[0.12] hover:translate-y-[-4px]"
+                className="animate-on-scroll will-change-transform group flex flex-col items-center text-center rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 backdrop-blur-sm transition-all duration-500 hover:bg-white/[0.05] hover:border-white/[0.12] hover:translate-y-[-4px]"
               >
                 <div
                   className={`mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${stat.gradient} shadow-lg transition-transform duration-500 group-hover:scale-110`}
@@ -110,7 +106,7 @@ export default function StatsBar() {
                 <span className="mt-3 text-sm uppercase tracking-[0.15em] text-cloud/45 font-medium">
                   {stat.label}
                 </span>
-              </motion.div>
+              </div>
             );
           })}
         </div>

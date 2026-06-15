@@ -22,11 +22,10 @@ export default function MobileStickyCTA() {
   if (!isVisible) return null;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 15 }}
+    <div
       animate={{ y: 0 }}
       exit={{ y: 100 }}
-      className="fixed bottom-0 inset-x-0 z-50 p-4 md:hidden"
+      className="animate-on-scroll fixed bottom-0 inset-x-0 z-50 p-4 md:hidden"
     >
       <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/90 to-transparent -z-10" />
       
@@ -37,6 +36,6 @@ export default function MobileStickyCTA() {
         GAUTI AI ASISTENTĄ
         <ArrowRight className="h-4 w-4" />
       </a>
-    </motion.div>
+    </div>
   );
 }

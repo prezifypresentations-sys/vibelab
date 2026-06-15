@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Check, ArrowRight, ShieldCheck } from "lucide-react";
 
 export default function Products() {
@@ -21,12 +20,8 @@ export default function Products() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
           {/* Left Column: Urgency Text */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="text-left"
+          <div
+            className="animate-on-scroll text-left"
           >
             <p className="text-electric font-bold tracking-wider text-sm uppercase mb-4">
               Kodėl dabar?
@@ -46,15 +41,11 @@ export default function Products() {
                 Kai deleguojate savo rutiną dirbtiniam intelektui, jūs pagaliau galite dirbti PRIE verslo, o ne JAME.
               </p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right Column: Pricing Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="w-full max-w-md mx-auto lg:mx-0 lg:ml-auto"
+          <div
+            className="animate-on-scroll w-full max-w-md mx-auto lg:mx-0 lg:ml-auto"
           >
             <div className="rounded-[2rem] bg-[#0A0F1E] border border-white/10 p-8 shadow-2xl relative overflow-hidden">
               {/* Card Background Glow */}
@@ -123,11 +114,8 @@ export default function Products() {
                   <span className="text-red-400 font-bold animate-pulse">Liko 7</span>
                 </div>
                 <div className="h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
-                  <motion.div 
-                    initial={{ opacity: 0, y: 15 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="h-full bg-gradient-to-r from-[#ff4d4d] to-[#ff4d4d] rounded-full"
+                  <div
+                    className="animate-on-scroll h-full bg-gradient-to-r from-[#ff4d4d] to-[#ff4d4d] rounded-full"
                   />
                 </div>
                 <p className="text-xs text-center text-cloud/50 mt-3">
@@ -148,7 +136,7 @@ export default function Products() {
                 14 d. garantija
               </div>
             </div>
-          </motion.div>
+          </div>
 
         </div>
       </div>

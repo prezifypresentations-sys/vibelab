@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 
 type Props = {
   eyebrow?: string;
@@ -31,37 +30,25 @@ export default function SectionHeading({
       }
     >
       {eyebrow && (
-        <motion.span
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+        <span
           className={`inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium ${eyebrowClasses}`}
         >
           {eyebrow}
-        </motion.span>
+        </span>
       )}
-      <motion.h2
-        initial={{ opacity: 0, y: 15 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-40px" }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-        className="will-change-transform mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
+      <h2
+        className="animate-on-scroll will-change-transform mt-5 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight"
       >
         {title}
-      </motion.h2>
+      </h2>
       {subtitle && (
-        <motion.p
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+        <p
           className={`mt-5 text-lg text-cloud/70 leading-relaxed ${
             align === "center" ? "mx-auto max-w-2xl" : ""
           }`}
         >
           {subtitle}
-        </motion.p>
+        </p>
       )}
     </div>
   );

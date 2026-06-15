@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ArrowRight, Zap } from "lucide-react";
 
 export default function CTABand() {
@@ -29,12 +28,8 @@ export default function CTABand() {
         <div className="rounded-3xl bg-navy/10 backdrop-blur-sm border border-navy/15 px-8 py-16 md:px-16 md:py-20 text-center overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[200px] w-[400px] rounded-full bg-white/15 blur-[80px] pointer-events-none" />
 
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="relative"
+          <div
+            className="animate-on-scroll relative"
           >
             <div className="inline-flex items-center gap-2 rounded-full bg-navy/15 px-4 py-1.5 text-xs font-medium text-navy/80 mb-6 border border-navy/20">
               <Zap className="h-3.5 w-3.5" />
@@ -82,7 +77,7 @@ export default function CTABand() {
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

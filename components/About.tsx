@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ArrowRight, Star, Award, Lightbulb } from "lucide-react";
 import Image from "next/image";
 
@@ -25,12 +24,8 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left: Photo card */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="will-change-transform lg:col-span-5"
+          <div
+            className="animate-on-scroll will-change-transform lg:col-span-5"
             style={{ perspective: "1000px" }}
           >
             <div className="relative mx-auto max-w-sm">
@@ -76,15 +71,11 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right: Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="will-change-transform lg:col-span-7"
+          <div
+            className="animate-on-scroll will-change-transform lg:col-span-7"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-medium text-gold">
               <Award className="h-3 w-3" />
@@ -108,11 +99,7 @@ export default function About() {
             </div>
 
             {/* CTA */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+            <div className="animate-on-scroll"
             >
               <div className="mt-8 border-t border-white/5 pt-8">
                 <p className="text-cloud/80 mb-6 font-medium">Būtent todėl sukūriau šį gidą – kad Jums nereikėtų klysti ten, kur klydau aš.</p>
@@ -124,8 +111,8 @@ export default function About() {
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </a>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

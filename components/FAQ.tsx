@@ -54,13 +54,9 @@ export default function FAQ() {
             const isOpen = openIndex === index;
 
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-sm transition-colors hover:bg-white/[0.04]"
+                className="animate-on-scroll overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-sm transition-colors hover:bg-white/[0.04]"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
@@ -80,19 +76,17 @@ export default function FAQ() {
 
                 <AnimatePresence>
                   {isOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 15 }}
+                    <div className="animate-on-scroll"
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.5, ease: "easeOut" }}
                     >
                       <div className="px-6 pb-6 text-cloud/70 leading-relaxed border-t border-white/5 pt-4">
                         {faq.a}
                       </div>
-                    </motion.div>
+                    </div>
                   )}
                 </AnimatePresence>
-              </motion.div>
+              </div>
             );
           })}
         </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Briefcase, Smartphone, Rocket, FileText, Users, Lightbulb } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
@@ -56,13 +55,9 @@ export default function WhoIsThisFor() {
           {profiles.map((profile, i) => {
             const Icon = profile.icon;
             return (
-              <motion.div
+              <div
                 key={profile.title}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                className="group flex flex-col items-center rounded-2xl border border-white/[0.05] bg-white/[0.02] p-8 text-center transition-all hover:bg-white/[0.04] hover:border-white/10"
+                className="animate-on-scroll group flex flex-col items-center rounded-2xl border border-white/[0.05] bg-white/[0.02] p-8 text-center transition-all hover:bg-white/[0.04] hover:border-white/10"
               >
                 <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-gold/10 text-gold transition-transform duration-300 group-hover:scale-110">
                   <Icon className="h-8 w-8" />
@@ -73,18 +68,14 @@ export default function WhoIsThisFor() {
                 <p className="text-sm text-cloud/60 leading-relaxed">
                   {profile.desc}
                 </p>
-              </motion.div>
+              </div>
             );
           })}
         </div>
 
         {/* Guarantee Banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="mt-20 mx-auto max-w-4xl rounded-3xl border border-green-500/20 bg-gradient-to-r from-green-500/10 via-transparent to-green-500/10 p-8 md:p-12 text-center relative overflow-hidden backdrop-blur-sm"
+        <div
+          className="animate-on-scroll mt-20 mx-auto max-w-4xl rounded-3xl border border-green-500/20 bg-gradient-to-r from-green-500/10 via-transparent to-green-500/10 p-8 md:p-12 text-center relative overflow-hidden backdrop-blur-sm"
         >
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay pointer-events-none" />
           <h3 className="font-display text-3xl font-bold text-green-400 mb-4">
@@ -94,7 +85,7 @@ export default function WhoIsThisFor() {
             Pabandyk 14 dienų. Jei per šį laiką AI asistentas nesutaupo tau bent 1 valandos per dieną — parašyk mums ir grąžinsime 100% sumos. Be jokių klausimų, be jokių sąlygų.
           </p>
           <p className="text-white font-bold">Rizikuojame mes, o ne jūs.</p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

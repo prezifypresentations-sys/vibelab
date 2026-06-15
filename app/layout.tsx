@@ -30,6 +30,8 @@ export const metadata: Metadata = {
   },
 };
 
+import ScrollAnimations from "@/components/ScrollAnimations";
+
 export default function RootLayout({
   children,
 }: {
@@ -40,7 +42,10 @@ export default function RootLayout({
       lang="lt"
       className={`${inter.variable} ${spaceGrotesk.variable} scroll-smooth`}
     >
-      <body className="font-body bg-navy text-cloud">{children}</body>
+      <body className="font-body bg-navy text-cloud">
+        {children}
+        <ScrollAnimations />
+      </body>
     </html>
   );
 }
