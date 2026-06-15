@@ -28,7 +28,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.5 }}
             className="will-change-transform lg:col-span-5"
             style={{ perspective: "1000px" }}
@@ -82,8 +82,8 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
-            transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
+            transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 1, 0.5, 1] }}
             className="will-change-transform lg:col-span-7"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-medium text-gold">
@@ -92,18 +92,21 @@ export default function About() {
             </span>
 
             <h2 className="mt-6 font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.1]">
-              Kol kiti tik kalba, kiti jau dirba.
+              Kol kiti tik kalba, kiti jau dirba tai, kas vakar atrodė neįmanoma.
             </h2>
 
             <div className="mt-8 space-y-5 text-cloud/70 leading-relaxed text-base md:text-lg">
               <p>
-                Dar visai neseniai rutinoms ir ataskaitoms sugaišdavau visą dieną. Kol visko nepakeitė dirbtinis intelektas. Susikūriau asistentą, kuris dabar valdo projektus, analizuoja duomenis ir ruošia ataskaitas. <strong>Dirba 24/7 ir nepavargsta.</strong>
+                Dar visai neseniai vienai kokybiškai prezentacijai ar išsamiai ataskaitai paruošti man reikėdavo visos dienos. Duomenų rinkimas, formatavimas, tekstų rašymas – procesai strigdavo, o rutina tiesiog žudydavo motyvaciją.
               </p>
               <p>
-                Lietuvoje visi kalba apie AI, bet trūksta praktikos. Niekas neparodo: „Štai, spausk čia ir daryk taip“.
+                Taip atrodė mano kasdienybė. Kol visko nepakeitė dirbtinis intelektas. Susikūriau asmeninį asistentą, kuris dabar valdo mano projektus: analizuoja duomenis, konstruoja svetaines, paruošia ataskaitas ir net atrašo į dalį laiškų. <strong>Dirba 24/7. Ir niekada nepavargsta.</strong>
+              </p>
+              <p>
+                Tačiau pastebėjau problemą: Lietuvoje visi tik kalba apie AI galimybes, bet niekas neparodo <em>kaip tai padaryti praktiškai</em>. Niekas nepasodina ir nepasako: „Štai, spausk čia ir daryk taip“.
               </p>
               <p className="font-semibold text-white">
-                Todėl sukūriau šį gidą. 30 minučių, ir jūs turite veikiantį asistentą. Be programavimo.
+                Būtent todėl sukūriau šį gidą. 30 minučių, ir jūs turite veikiantį, pilnai sukonfigūruotą asistentą. Be jokio programavimo.
               </p>
             </div>
 
@@ -111,8 +114,8 @@ export default function About() {
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "0px 0px 50px 0px" }}
-              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
               <div className="mt-8 border-t border-white/5 pt-8">
                 <p className="text-cloud/80 mb-6 font-medium">Būtent todėl sukūriau šį gidą – kad Jums nereikėtų klysti ten, kur klydau aš.</p>

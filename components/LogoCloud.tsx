@@ -18,7 +18,7 @@ export default function LogoCloud() {
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="text-center text-sm uppercase tracking-[0.2em] text-cloud/40 font-medium"
         >
@@ -28,8 +28,8 @@ export default function LogoCloud() {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "0px 0px 50px 0px" }}
-          transition={{ duration: 0.6}}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="mt-10 grid grid-cols-3 sm:grid-cols-6 gap-8 items-center"
         >
           {logos.map((logo, i) => (
@@ -37,8 +37,8 @@ export default function LogoCloud() {
               key={logo.name}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true, margin: "0px 0px 50px 0px" }}
-              transition={{ duration: 0.4}}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
               className="grayscale-hover flex flex-col items-center justify-center gap-2 py-4 cursor-default"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.06] border border-white/10">

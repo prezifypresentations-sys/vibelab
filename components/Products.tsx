@@ -24,7 +24,7 @@ export default function Products() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-left"
           >
@@ -32,18 +32,21 @@ export default function Products() {
               Kodėl dabar?
             </p>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Laikas keistis.
+              Technologijos keičiasi kasdien.
             </h2>
+            <h3 className="text-2xl sm:text-3xl font-semibold text-cloud/80 mb-8">
+              Tačiau jums nereikia tapti programuotoju.
+            </h3>
             
             <div className="space-y-6 text-lg text-cloud/70 leading-relaxed">
               <p>
-                Jums nebūtina sekti AI naujienų ar tapti programuotoju. Jums reikia tik vieno:
+                Jums nebūtina sekti kiekvienos naujienos ar mokytis sudėtingų sistemų. Jums trūksta tik vieno, paties brangiausio resurso:
               </p>
               <p className="text-2xl font-bold text-white py-2">
-                Daugiau laiko.
+                Laiko verslo augimui.
               </p>
               <p>
-                Kai deleguojate savo rutiną dirbtiniam intelektui, jūs pagaliau galite dirbti PRIE verslo, o ne JAME.
+                Kai deleguojate savo rutiną dirbtiniam intelektui – viskas pasikeičia. Išauga komandos produktyvumas, pagreitėja klientų aptarnavimas ir jūs pagaliau galite dirbti PRIE verslo, o ne JAME.
               </p>
             </div>
           </motion.div>
@@ -52,8 +55,8 @@ export default function Products() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
-            transition={{ duration: 0.6}}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="w-full max-w-md mx-auto lg:mx-0 lg:ml-auto"
           >
             <div className="rounded-[2rem] bg-[#0A0F1E] border border-white/10 p-8 shadow-2xl relative overflow-hidden">
@@ -126,7 +129,7 @@ export default function Products() {
                   <motion.div 
                     initial={{ width: 0 }}
                     whileInView={{ width: "93%" }}
-                    transition={{ duration: 1.5}}
+                    transition={{ duration: 1.5, delay: 0.5 }}
                     className="h-full bg-gradient-to-r from-[#ff4d4d] to-[#ff4d4d] rounded-full"
                   />
                 </div>

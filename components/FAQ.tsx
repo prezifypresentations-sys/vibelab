@@ -58,8 +58,8 @@ export default function FAQ() {
                 key={index}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "0px 0px 50px 0px" }}
-                transition={{ duration: 0.4}}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-sm transition-colors hover:bg-white/[0.04]"
               >
                 <button

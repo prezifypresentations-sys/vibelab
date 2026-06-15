@@ -66,7 +66,7 @@ export default function Course() {
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
             className="will-change-transform lg:col-span-7"
           >
@@ -95,8 +95,8 @@ export default function Course() {
                   key={label}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "0px 0px 50px 0px" }}
-                  transition={{ duration: 0.5}}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
                   className="group flex items-start gap-3 rounded-xl border border-white/[0.08] bg-white/[0.02] px-4 py-3.5 transition-all duration-300 hover:bg-white/[0.05] hover:border-white/15"
                 >
                   <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-electric/10">
@@ -132,7 +132,7 @@ export default function Course() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px 50px 0px" }}
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.5 }}
             className="will-change-transform lg:col-span-5"
             style={{ perspective: "1000px" }}
@@ -164,8 +164,8 @@ export default function Course() {
                     key={item.title}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, margin: "0px 0px 50px 0px" }}
-                    transition={{ duration: 0.4}}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: 0.3 + i * 0.06 }}
                     className="flex items-center gap-3 text-cloud/80 group/item"
                   >
                     <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-gold/10 text-xs font-bold text-gold ring-1 ring-gold/20 transition-all group-hover/item:bg-gold/20 group-hover/item:ring-gold/40">
