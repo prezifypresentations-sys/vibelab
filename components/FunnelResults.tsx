@@ -12,6 +12,7 @@ export default function FunnelResults({ answers }: Props) {
   const [showExitModal, setShowExitModal] = useState(false);
   const [hasExited, setHasExited] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [isPlayingVSL, setIsPlayingVSL] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -88,20 +89,35 @@ export default function FunnelResults({ answers }: Props) {
         </p>
       </div>
 
-      {/* VSL Placeholder */}
-      <div className="max-w-3xl mx-auto mb-16 relative group cursor-pointer">
+      {/* VSL Player */}
+      <div className="max-w-3xl mx-auto mb-16 relative group">
         <div className="absolute inset-0 bg-gold/20 blur-xl rounded-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
-        <div className="relative aspect-video bg-navy-light border border-white/10 rounded-3xl overflow-hidden flex items-center justify-center shadow-2xl group-hover:border-gold/50 transition-colors">
-          {/* Replace this div with an actual <iframe src="vimeo/youtube"> once you have the video */}
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-30 mix-blend-overlay"></div>
-          <div className="absolute inset-0 bg-navy/60"></div>
-          
-          <div className="relative z-10 flex flex-col items-center">
-            <div className="h-16 w-16 bg-gold rounded-full flex items-center justify-center mb-4 shadow-[0_0_30px_rgba(255,222,89,0.5)] group-hover:scale-110 transition-transform">
-              <Play className="h-6 w-6 text-navy ml-1" />
+        <div className="relative aspect-video bg-navy border border-white/10 rounded-3xl overflow-hidden flex items-center justify-center shadow-2xl group-hover:border-gold/50 transition-colors">
+          {!isPlayingVSL ? (
+            <div 
+              className="absolute inset-0 cursor-pointer"
+              onClick={() => setIsPlayingVSL(true)}
+            >
+              <div className="absolute inset-0 bg-[url('/images/vsl-poster.png')] bg-cover bg-center opacity-80 mix-blend-overlay"></div>
+              <div className="absolute inset-0 bg-navy/40"></div>
+              
+              <div className="relative z-10 flex flex-col items-center justify-center h-full">
+                <div className="h-16 w-16 bg-gold rounded-full flex items-center justify-center mb-4 shadow-[0_0_30px_rgba(255,222,89,0.5)] group-hover:scale-110 transition-transform">
+                  <Play className="h-6 w-6 text-navy ml-1" />
+                </div>
+                <p className="text-white font-bold text-lg">Žiūrėti šį svarbų pranešimą</p>
+              </div>
             </div>
-            <p className="text-white font-bold text-lg">Žiūrėti šį svarbų pranešimą</p>
-          </div>
+          ) : (
+            <iframe 
+              src="https://www.youtube.com/embed/PYnuZSVN5xY?autoplay=1&rel=0&modestbranding=1" 
+              title="VibeLab VSL" 
+              className="absolute inset-0 w-full h-full"
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
+          )}
         </div>
       </div>
 

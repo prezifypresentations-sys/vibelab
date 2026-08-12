@@ -32,3 +32,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 lighthouse-report.*
+vsl-vibelab.mov
