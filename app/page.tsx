@@ -1,39 +1,26 @@
-import Hero from "@/components/Hero";
-import LeadMagnetPopup from "@/components/LeadMagnetPopup";
-import Products from "@/components/Products";
-import Urgency from "@/components/Urgency";
-import StatsBar from "@/components/StatsBar";
-import Benefits from "@/components/Benefits";
-import Testimonials from "@/components/Testimonials";
-import WhoIsThisFor from "@/components/WhoIsThisFor";
-import About from "@/components/About";
-import B2BServices from "@/components/B2BServices";
-import FAQ from "@/components/FAQ";
-import CTABand from "@/components/CTABand";
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import StripeConfirmation from "@/components/StripeConfirmation";
-import MobileStickyCTA from "@/components/MobileStickyCTA";
+import Footer from "@/components/Footer";
+import QuizFunnelMain from "@/components/QuizFunnelMain";
+import NeuralCanvas from "@/components/NeuralCanvas";
 
-export default function Page() {
+export default function Home() {
   return (
-    <main className="min-h-screen bg-navy text-cloud antialiased selection:bg-gold/30 selection:text-white">
-      <Navbar />
-      <Hero />
-      <Urgency />
-      <StatsBar />
-      <Benefits />
-      <Testimonials />
-      <WhoIsThisFor />
-      <About />
-      <Products />
-      <B2BServices />
-      <FAQ />
-      <CTABand />
-      <Footer />
-      <LeadMagnetPopup />
-      <StripeConfirmation />
-      <MobileStickyCTA />
+    <main className="min-h-screen bg-navy text-cloud selection:bg-gold/30 selection:text-gold-light overflow-x-hidden relative">
+      {/* Background canvas for modern tech aesthetic */}
+      <div className="fixed inset-0 z-0">
+        <NeuralCanvas />
+      </div>
+      
+      <div className="relative z-10 flex flex-col min-h-screen">
+        <Navbar />
+        
+        {/* The core funnel experience */}
+        <div className="flex-1 flex flex-col">
+          <QuizFunnelMain />
+        </div>
+
+        <Footer />
+      </div>
     </main>
   );
 }

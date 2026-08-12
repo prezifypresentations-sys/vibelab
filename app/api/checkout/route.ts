@@ -12,6 +12,10 @@ const baseProducts = {
     name: "DI Asistento Kūrimas",
     price: 47,
   },
+  "ai-agency-course": {
+    name: "AI Agentūros Kursas + Skool Bendruomenė",
+    price: 49,
+  }
 };
 
 const allUpsells = {
@@ -49,6 +53,10 @@ export async function POST(req: Request) {
 
     // Add base product
     const base = baseProducts[baseProduct as keyof typeof baseProducts];
+    
+    // Determine if this is a recurring subscription based on product ID
+    const isRecurring = baseProduct === "ai-agency-course";
+    
     lineItems.push({
       price_data: {
         currency: "eur",
@@ -56,6 +64,7 @@ export async function POST(req: Request) {
           name: base.name,
         },
         unit_amount: base.price * 100, // Stripe uses cents
+        ...(isRecurring ? { recurring: { interval: "month" as const } } : {})
       },
       quantity: 1,
     });
@@ -85,10 +94,11 @@ export async function POST(req: Request) {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       line_items: lineItems,
-      mode: "payment",
+      mode: isRecurring ? "subscription" : "payment",
+      locale: "lt",
       success_url: `https://www.skool.com/vibelab-9189/about`,
-      cancel_url: `${origin}/pirkti?product=${baseProduct}`,
-      customer_creation: "always",
+      cancel_url: `${origin}/`,
+      customer_creation: isRecurring ? undefined : "always",
     });
 
     return NextResponse.json({ url: session.url });
