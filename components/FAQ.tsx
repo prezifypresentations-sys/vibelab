@@ -76,14 +76,16 @@ export default function FAQ() {
 
                 <AnimatePresence>
                   {isOpen && (
-                    <div className="animate-on-scroll"
+                    <motion.div 
+                      initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
+                      className="overflow-hidden"
                     >
                       <div className="px-6 pb-6 text-cloud/70 leading-relaxed border-t border-white/5 pt-4">
                         {faq.a}
                       </div>
-                    </div>
+                    </motion.div>
                   )}
                 </AnimatePresence>
               </div>

@@ -170,16 +170,19 @@ export default function Course() {
       <AnimatePresence>
         {isModalOpen && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 sm:p-12">
-            <div className="animate-on-scroll"
+            <motion.div 
+              initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsModalOpen(false)}
               className="absolute inset-0 bg-navy/80 backdrop-blur-md"
             />
             
-            <div
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="animate-on-scroll relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-navy shadow-2xl"
+              className="relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-navy shadow-2xl"
             >
               {/* Modal Header */}
               <div className="flex items-center justify-between border-b border-white/5 bg-white/[0.02] px-8 py-6">
@@ -253,7 +256,7 @@ export default function Course() {
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
         )}
       </AnimatePresence>

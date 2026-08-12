@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import {
   Globe,
   Bot,
@@ -87,7 +88,7 @@ export default function Skills() {
             const Icon = skill.icon;
             const isGold = skill.accent === "gold";
             return (
-              <div
+              <motion.div
                 key={skill.title}
                 custom={i}
                 initial="hidden"
@@ -125,7 +126,7 @@ export default function Skills() {
                 <p className="mt-2 text-sm text-cloud/55 leading-relaxed">
                   {skill.body}
                 </p>
-              </div>
+              </motion.div>
             );
           })}
         </div>
