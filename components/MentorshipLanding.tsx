@@ -180,41 +180,60 @@ export default function MentorshipLanding() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative bg-white/[0.02] border border-white/10 rounded-3xl overflow-hidden p-8 md:p-12"
+          className="relative bg-white/[0.02] border border-white/10 rounded-3xl overflow-hidden p-8 md:p-12 mb-24"
         >
           <div className="absolute top-0 right-0 p-32 bg-gold/10 blur-[100px] rounded-full pointer-events-none" />
-          <div className="relative z-10 flex flex-col md:flex-row items-center gap-10">
-            <div className="w-40 h-40 md:w-56 md:h-56 shrink-0 rounded-full overflow-hidden border-2 border-gold/30 relative">
-              <div className="absolute inset-0 bg-gold/20 animate-pulse" />
-              {/* NOTE: You should replace this placeholder with an actual image of yourself (e.g. /images/zygis.jpg) */}
-              <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop" 
-                alt="Žygis" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-              />
-            </div>
-            
-            <div className="text-center md:text-left">
-              <h2 className="text-3xl font-display font-bold text-white mb-4">Kodėl turėtumėte manęs klausytis?</h2>
-              <p className="text-cloud/70 leading-relaxed mb-6">
-                Esu sukūręs sistemą, kuri man ir mano mokiniams generuoja stabilias pajamas. Mano turinį socialiniuose tinkluose peržiūri milijonai, o praktikos patvirtintos strategijos leidžia greitai pasiekti rezultatų be metų bandymų ir klaidų.
-              </p>
-              
-              <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
-                <div className="bg-navy/50 border border-white/10 rounded-xl px-4 py-2 flex items-center gap-2">
-                  <Users className="h-4 w-4 text-gold" />
-                  <span className="text-sm font-semibold text-white">1.6M+ Sekėjų</span>
+          
+          <div className="text-center mb-12 relative z-10">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-4">Mano istorija: Nuo 0 iki 1M+ sekėjų</h2>
+            <p className="text-cloud/70 max-w-2xl mx-auto">
+              Būdamas vos 19-os, vienas TikTok profilis apvertė mano gyvenimą 360 laipsnių kampu. Uždirbdavau daugiau nei mano mokytojai, o per 2 metus su „Prezify“ pasiekiau virš milijono sekėjų.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 relative z-10">
+            {/* Image 1 Placeholder: PayPal/Income */}
+            <div className="bg-navy/50 border border-white/5 rounded-2xl p-2 hover:border-gold/30 transition-colors">
+              <div className="aspect-[9/16] bg-navy-light rounded-xl overflow-hidden relative group">
+                <div className="absolute inset-0 flex items-center justify-center text-cloud/50 text-sm p-4 text-center group-hover:opacity-0 transition-opacity">
+                  Įkelkite PayPal/Pajamų screenshot'ą čia (public/images/proof1.png)
                 </div>
-                <div className="bg-navy/50 border border-white/10 rounded-xl px-4 py-2 flex items-center gap-2">
-                  <TrendingUp className="h-4 w-4 text-gold" />
-                  <span className="text-sm font-semibold text-white">Patvirtinta Sistema</span>
-                </div>
-                <div className="bg-navy/50 border border-white/10 rounded-xl px-4 py-2 flex items-center gap-2">
-                  <Award className="h-4 w-4 text-gold" />
-                  <span className="text-sm font-semibold text-white">100+ Sėkmės Istorijų</span>
-                </div>
+                {/* <img src="/images/proof1.png" alt="Pajamos" className="w-full h-full object-cover" /> */}
               </div>
+              <p className="text-center text-sm text-cloud/70 mt-3 font-semibold">Tūkstantinės pajamos iš turinio</p>
             </div>
+
+            {/* Image 2 Placeholder: CreatorKore / Digital Products */}
+            <div className="bg-navy/50 border border-white/5 rounded-2xl p-2 hover:border-gold/30 transition-colors">
+              <div className="aspect-[9/16] bg-navy-light rounded-xl overflow-hidden relative group">
+                <div className="absolute inset-0 flex items-center justify-center text-cloud/50 text-sm p-4 text-center group-hover:opacity-0 transition-opacity">
+                  Įkelkite Dashboard/Pardavimų screenshot'ą čia (public/images/proof2.png)
+                </div>
+                {/* <img src="/images/proof2.png" alt="Pardavimai" className="w-full h-full object-cover" /> */}
+              </div>
+              <p className="text-center text-sm text-cloud/70 mt-3 font-semibold">Stabilios sistemos generuoja rezultatą</p>
+            </div>
+
+            {/* Image 3 Placeholder: 1M Followers */}
+            <div className="bg-navy/50 border border-white/5 rounded-2xl p-2 hover:border-gold/30 transition-colors">
+              <div className="aspect-[9/16] bg-navy-light rounded-xl overflow-hidden relative group">
+                <div className="absolute inset-0 flex items-center justify-center text-cloud/50 text-sm p-4 text-center group-hover:opacity-0 transition-opacity">
+                  Įkelkite Prezify/Sekėjų screenshot'ą čia (public/images/proof3.png)
+                </div>
+                {/* <img src="/images/proof3.png" alt="Sekėjai" className="w-full h-full object-cover" /> */}
+              </div>
+              <p className="text-center text-sm text-cloud/70 mt-3 font-semibold">1M+ lojali bendruomenė</p>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-center relative z-10">
+            <p className="text-lg text-white font-semibold mb-6">Dabar noriu šią sistemą perduoti JUMS.</p>
+            <button
+              onClick={() => setIsFormOpen(true)}
+              className="inline-flex items-center gap-2 text-gold hover:text-gold-light font-bold transition-colors"
+            >
+              Pradėkime jūsų istoriją <ArrowRight className="h-5 w-5" />
+            </button>
           </div>
         </motion.div>
 
