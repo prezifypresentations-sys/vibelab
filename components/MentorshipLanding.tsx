@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 import { Play, CheckCircle2, XCircle, ArrowRight, Star, TrendingUp, Users, Award } from "lucide-react";
 import { useState } from "react";
 import NeuralCanvas from "./NeuralCanvas";
+import ApplicationForm from "./ApplicationForm";
 
 export default function MentorshipLanding() {
   const [isPlayingVSL, setIsPlayingVSL] = useState(false);
+  const [isFormOpen, setIsFormOpen] = useState(false);
 
   return (
     <div className="relative min-h-screen bg-navy text-cloud overflow-hidden selection:bg-gold/30 selection:text-gold-light">
@@ -100,10 +102,8 @@ export default function MentorshipLanding() {
           transition={{ delay: 0.4 }}
           className="flex flex-col items-center mb-24"
         >
-          <a
-            href="https://cal.com/icyscale/30min"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => setIsFormOpen(true)}
             className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-gold to-[#ffc800] px-10 py-6 text-xl font-black text-navy shadow-[0_0_40px_rgba(255,222,89,0.3)] transition-all hover:scale-105 hover:shadow-[0_0_60px_rgba(255,222,89,0.5)] active:scale-95 w-full sm:w-auto overflow-hidden"
           >
             {/* Button Shine Effect */}
@@ -111,7 +111,7 @@ export default function MentorshipLanding() {
             
             APLIKUOTI MENTORYSTEI
             <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-1" />
-          </a>
+          </button>
           <p className="mt-4 text-sm text-cloud/50 flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
             Liko tik 2 vietos šios savaitės skambučiams
@@ -219,6 +219,12 @@ export default function MentorshipLanding() {
         </motion.div>
 
       </main>
+
+      <ApplicationForm 
+        isOpen={isFormOpen} 
+        onClose={() => setIsFormOpen(false)} 
+        calLink="https://cal.com/icyscale/30min"
+      />
     </div>
   );
 }
